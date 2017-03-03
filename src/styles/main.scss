@@ -1,0 +1,96 @@
+// $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+// @import '~bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+// @import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    padding: 2em;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+//--------------------------------
+.grid {
+    font-size:24px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+$thick-border: 3px solid black;
+$light-border: 1px solid black;
+
+.grid colgroup { border-left: $thick-border; }
+.grid colgroup:last-of-type { border-right: $thick-border; }
+.grid tbody { border-top: $thick-border; }
+.grid tbody:last-of-type { border-bottom: $thick-border; }
+.grid td { border: $light-border; }
+
+#message {
+    margin-left: 45%;
+    margin-bottom: 2%;
+}
+
+input {
+    width:45px;
+    height:45px;
+    text-align:center;
+    vertical-align: middle;
+    font-size:24px;
+    line-height: 18px;
+    border: none;
+    outline: none;
+    margin:0;
+    padding: 4px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input.fixed {
+    color: #616161;
+    background-color: #F5F5F5;
+}
+
+input.invalid {
+    background-color: #fbe9e7;
+    color: red;
+}
